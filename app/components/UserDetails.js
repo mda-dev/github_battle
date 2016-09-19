@@ -4,8 +4,8 @@ var PropTypes = React.PropTypes
 function UserDetails (user) {
 	return (
 		<div>
-			{!!user.score && <li className="list-group-item list-group-item-info"><h3>Score: {user.score}</h3></li>}
-			<li className="list-group-item list-group-item-info bg-info"> <img src={user.info.avatar_url} className="img-rounded" style={{maxWidth: 150+'px'}}/></li>
+			{!!user.score && <li className={"list-group-item list-group-item-" + user.headerBg}><h3>Score: {user.score}</h3></li>}
+			<li className="list-group-item list-group-item-info"> <img src={user.info.avatar_url} className="img-rounded" style={{maxWidth: 150+'px'}}/></li>
 			{user.info.name && <li className="list-group-item list-group-item-info">Name: {user.info.name}</li>}
 			<li className="list-group-item list-group-item-info">Username: {user.info.login}</li>
 			{user.info.location && <li className="list-group-item list-group-item-info">Location: {user.info.location}</li>}

@@ -2,9 +2,9 @@ var React = require('react');
 var transparentBg = require('../styles').transparentBg;
 var PropTypes = React.PropTypes;
 
-function Prompt(props) {
+function PromptComponent(props) {
 	return (
-		<div className="jumbotron col-sm-4 col-sm-offset-4 text-center" style={transparentBg}>
+		<div className="jumbotron col-sm-4 col-sm-offset-4 text-center" style={transparentBg}> 
 			<div className="page-header">
 			<h1>{props.header}</h1>
 			</div>
@@ -12,8 +12,8 @@ function Prompt(props) {
 				<form onSubmit={props.onSubmitUser} >
 					<div className="form-group">
 						<div className="input-group">
-							<span className="input-group-addon" id="basic-addon1">
-								<i className="fa fa-user" aria-hidden="true"></i>
+							<span className="input-group-addon">
+								<i className="fa fa-github" aria-hidden="true"></i>
 							</span>
 							<input 
 								className="form-control"
@@ -27,7 +27,7 @@ function Prompt(props) {
 						<button 
 							className="btn btn-block btn-success"
 							type="submit">
-							Contine <i className="fa fa-arrow-right" aria-hidden="true"></i>
+							Continue <i className="fa fa-arrow-right" aria-hidden="true"></i>
 						</button>
 					</div>
 				</form>
@@ -36,11 +36,11 @@ function Prompt(props) {
 	);
 }
 
-Prompt.propTypes = {
+PromptComponent.propTypes = {
 	header: PropTypes.string.isRequired,
 	username: PropTypes.string.isRequired,
 	onSubmitUser: PropTypes.func.isRequired,
 	onUpdateUser: PropTypes.func.isRequired
 }
 
-module.exports = Prompt;
+module.exports = PromptComponent;

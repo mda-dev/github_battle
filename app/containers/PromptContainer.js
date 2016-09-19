@@ -1,5 +1,5 @@
 var React = require('react');
-var Prompt = require('../components/Prompt');
+var PromptComponent = require('../components/PromptComponent');
 
 var PromptContainer = React.createClass({
 	contextTypes : {
@@ -40,7 +40,7 @@ var PromptContainer = React.createClass({
 
 	render: function() {
 		return (
-			<Prompt 
+			<PromptComponent 
 				onSubmitUser = {this.handleSubmitUser}
 				onUpdateUser = {this.handleUpdateUser}
 				header = {this.props.route.header}

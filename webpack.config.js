@@ -15,7 +15,8 @@ module.exports = {
 	},
 	module:{
 		loaders: [
-			{test: /\.js$/, exclude: /node_module/, loader: 'babel?presets[]=es2015&presets[]=react'}
+			{test: /\.js$/, exclude: /node_module/, loader: 'babel?presets[]=es2015&presets[]=react'},
+			{test: /\.css$/, loader: 'style-loader!css-loader'}
 		]
 	},
 	plugins:[htmlWebpackPluginConfig]
