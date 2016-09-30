@@ -19,5 +19,4 @@ var routes = require('./config/routes')
 // 		branch: _APP_INFO.branch,
 // 	}
 // }).install()
-
 ReactDOM.render(routes , document.getElementById('app'));

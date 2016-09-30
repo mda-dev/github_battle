@@ -16,6 +16,7 @@ function PromptComponent(props) {
 								<i className="fa fa-github" aria-hidden="true"></i>
 							</span>
 							<input 
+								required
 								className="form-control"
 								placeholder="Github username"
 								onChange={props.onUpdateUser}
